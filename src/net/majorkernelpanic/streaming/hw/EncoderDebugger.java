@@ -262,7 +262,8 @@ public class EncoderDebugger {
 					if (!compareLumaPanes()) {
 						// TODO: try again with a different stride
 						// TODO: try again with the "stride" param
-						throw new RuntimeException("It is likely that stride!=width");
+						Log.v(TAG, "It is likely that stride!=width");
+						//throw new RuntimeException("It is likely that stride!=width");
 					}
 
 					int padding;
